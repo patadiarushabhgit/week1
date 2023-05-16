@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1{
+            font-size: 25px;
+             color: #0054a6;
+        }
+        h1:hover{
+            color: rgb(255, 149, 0);
+           
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #0054a6;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #003b80;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        label {
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+   
+    <form action="form2.php" method="post">
+        <h1>Form With Validation</h1>
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" required>
+        <label for="website">Website:</label>
+        <input type="text" name="website" required>
+        <label for="comment">Comment:</label>
+        <textarea name="comment" rows="5" cols="40"></textarea>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="female" required>Female
+        <input type="radio" name="gender" value="male" required>Male
+        <input type="radio" name="gender" value="other" required>Other
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
